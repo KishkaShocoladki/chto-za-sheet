@@ -10,3 +10,5 @@ C:\Users\user\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFo
 C:\Users\user\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Persons1.resources
 C:\Users\user\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Clans.resources
 C:\Users\user\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Person.resources
+C:\Users\user\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.clan.resources
+C:\Users\user\source\repos\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.prsn.resources

@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    public partial class Clans : Form
+    public partial class clan : Form
     {
-        public Clans()
+        public clan()
         {
             InitializeComponent();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void clan1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
