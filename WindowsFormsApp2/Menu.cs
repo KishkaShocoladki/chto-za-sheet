@@ -19,7 +19,7 @@ namespace WindowsFormsApp2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Persons form2 = new Persons();
+            Person form2 = new Person();
             form2.Show();
         }
 
@@ -27,6 +27,12 @@ namespace WindowsFormsApp2
         {
             Clans form3 = new Clans();
             form3.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Spravka form8 = new Spravka();
+            form8.Show();
         }
     }
 }
