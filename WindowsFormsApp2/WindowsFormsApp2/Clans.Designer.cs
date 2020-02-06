@@ -48,67 +48,77 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(22, 176);
+            this.button1.Location = new System.Drawing.Point(28, 176);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(159, 27);
+            this.button1.Size = new System.Drawing.Size(194, 35);
             this.button1.TabIndex = 0;
             this.button1.Text = "Лань Линь Цзинь";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(618, 176);
+            this.button3.Location = new System.Drawing.Point(504, 175);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(159, 27);
+            this.button3.Size = new System.Drawing.Size(194, 35);
             this.button3.TabIndex = 1;
             this.button3.Text = "Гу Су Лань";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button1_Click);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(465, 400);
+            this.button5.Location = new System.Drawing.Point(390, 400);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(159, 28);
+            this.button5.Size = new System.Drawing.Size(194, 36);
             this.button5.TabIndex = 2;
             this.button5.Text = "Цин Хэ Нэ";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(314, 176);
+            this.button2.Location = new System.Drawing.Point(269, 176);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(159, 27);
+            this.button2.Size = new System.Drawing.Size(194, 35);
             this.button2.TabIndex = 3;
             this.button2.Text = "Юн Мэн Цзян";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button4_Click);
+            this.button2.Click += new System.EventHandler(this.button1_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(170, 400);
+            this.button4.Location = new System.Drawing.Point(123, 400);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(159, 28);
+            this.button4.Size = new System.Drawing.Size(194, 36);
             this.button4.TabIndex = 4;
             this.button4.Text = "Ци Шань Вэнь";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button1_Click);
             // 
             // clan1
             // 
             this.clan1.Image = ((System.Drawing.Image)(resources.GetObject("clan1.Image")));
-            this.clan1.Location = new System.Drawing.Point(22, 12);
+            this.clan1.Location = new System.Drawing.Point(28, 12);
+            this.clan1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.clan1.Name = "clan1";
-            this.clan1.Size = new System.Drawing.Size(159, 158);
+            this.clan1.Size = new System.Drawing.Size(194, 158);
             this.clan1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.clan1.TabIndex = 5;
             this.clan1.TabStop = false;
-            this.clan1.Click += new System.EventHandler(this.clan1_Click);
             // 
             // clan3
             // 
             this.clan3.Image = ((System.Drawing.Image)(resources.GetObject("clan3.Image")));
-            this.clan3.Location = new System.Drawing.Point(618, 12);
+            this.clan3.Location = new System.Drawing.Point(504, 11);
+            this.clan3.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.clan3.Name = "clan3";
-            this.clan3.Size = new System.Drawing.Size(159, 158);
+            this.clan3.Size = new System.Drawing.Size(194, 158);
             this.clan3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.clan3.TabIndex = 6;
             this.clan3.TabStop = false;
@@ -116,9 +126,10 @@
             // clan2
             // 
             this.clan2.Image = ((System.Drawing.Image)(resources.GetObject("clan2.Image")));
-            this.clan2.Location = new System.Drawing.Point(314, 12);
+            this.clan2.Location = new System.Drawing.Point(269, 12);
+            this.clan2.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.clan2.Name = "clan2";
-            this.clan2.Size = new System.Drawing.Size(159, 158);
+            this.clan2.Size = new System.Drawing.Size(194, 158);
             this.clan2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.clan2.TabIndex = 7;
             this.clan2.TabStop = false;
@@ -126,9 +137,10 @@
             // clan5
             // 
             this.clan5.Image = ((System.Drawing.Image)(resources.GetObject("clan5.Image")));
-            this.clan5.Location = new System.Drawing.Point(465, 236);
+            this.clan5.Location = new System.Drawing.Point(390, 236);
+            this.clan5.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.clan5.Name = "clan5";
-            this.clan5.Size = new System.Drawing.Size(159, 158);
+            this.clan5.Size = new System.Drawing.Size(194, 158);
             this.clan5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.clan5.TabIndex = 8;
             this.clan5.TabStop = false;
@@ -136,18 +148,19 @@
             // clan4
             // 
             this.clan4.Image = ((System.Drawing.Image)(resources.GetObject("clan4.Image")));
-            this.clan4.Location = new System.Drawing.Point(170, 236);
+            this.clan4.Location = new System.Drawing.Point(123, 236);
+            this.clan4.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.clan4.Name = "clan4";
-            this.clan4.Size = new System.Drawing.Size(159, 158);
+            this.clan4.Size = new System.Drawing.Size(194, 158);
             this.clan4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.clan4.TabIndex = 9;
             this.clan4.TabStop = false;
             // 
             // Clans
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(733, 450);
             this.Controls.Add(this.clan4);
             this.Controls.Add(this.clan5);
             this.Controls.Add(this.clan2);
@@ -158,8 +171,10 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Name = "Clans";
-            this.Text = "Form3";
+            this.Text = "КЛАНЫ";
             ((System.ComponentModel.ISupportInitialize)(this.clan1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clan3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clan2)).EndInit();

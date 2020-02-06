@@ -12,9 +12,15 @@ namespace WindowsFormsApp2
 {
     public partial class clan : Form
     {
-        public clan()
+        public clan(string text)
         {
             InitializeComponent();
+            this.Text = text;
+        }
+
+        private void clan_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -16,5 +16,15 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
         }
+
+        private void персонажиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "Персонажи - юююю";
+        }
+
+        private void кланыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "Rkfys - юююю";
+        }
     }
 }

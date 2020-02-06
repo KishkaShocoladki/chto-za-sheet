@@ -19,7 +19,7 @@ namespace WindowsFormsApp2
           
         private void persons1_Click(object sender, EventArgs e)
         {
-            Persons1 f = new Persons1("Лань Линь Цзинь");
+            Persons1 f = new Persons1(persons1.Tag.ToString());
             f.Show();
         }
 
