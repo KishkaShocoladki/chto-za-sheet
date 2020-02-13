@@ -34,5 +34,12 @@ namespace WindowsFormsApp2
             Spravka form8 = new Spravka();
             form8.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Filters form8 = new Filters();
+            form8.Show();
+
+        }
     }
 }
