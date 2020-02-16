@@ -12,22 +12,24 @@ namespace WindowsFormsApp2
 {
     public partial class prsn : Form
     {
-        public prsn(string per)
+        public prsn(string person)
         {
             InitializeComponent();
-            Text = "Информация о " + per; 
+            Text = "Информация о " + person; 
             
             try
             {
-                pictureBox1.Load("../../Pictures/Persons/" + per + ".jpg");
-                pictureBox2.Load("../../Pictures/Persons/" + per + ".jpg");
+                pictureBox1.Load("../../Pictures/Persons/" + person + ".jpg");
+                pictureBox2.Load("../../Pictures/Persons/" + person + "2" + ".jpg");
+                textBox1.Lines =
+                  System.IO.File.ReadAllLines("../../Pictures/" + person + "Б1" + ".txt");
+                textBox2.Lines =
+                  System.IO.File.ReadAllLines("../../Pictures/" + person + "Б2" + ".txt");
+                textBox3.Lines =
+                  System.IO.File.ReadAllLines("../../Pictures/" + person + ".txt");
             }
             catch (Exception) { }
 
-            if (per == "Цзинь Гуанъяо")
-            {
-                button1.Text = "lflf";
-            }
         }
 
         private void prsn_Load(object sender, EventArgs e)

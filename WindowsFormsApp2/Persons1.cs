@@ -29,10 +29,22 @@ namespace WindowsFormsApp2
         public Persons1(string clan)
         {
             InitializeComponent();
-            button1.Text = "";
-            button2.Text = "";
-            button3.Text = "";
-            button4.Text = "";
+
+            Button[] bttn = new Button[4];
+            bttn[0] = button1;
+            bttn[1] = button2;
+            bttn[2] = button3;
+            bttn[3] = button4;
+
+            PictureBox[] pctbox = new PictureBox[4];
+            pctbox[0] = pictureBox1;
+            pctbox[1] = pictureBox2;
+            pctbox[2] = pictureBox3;
+            pctbox[3] = pictureBox4;
+            //  button1.Text = "";
+            // button2.Text = "";
+            //  button3.Text = "";
+            //  button4.Text = "";
 
             if (clan == "Лань Линь Цзинь")
             {
@@ -41,31 +53,45 @@ namespace WindowsFormsApp2
                 button3.Text = "Цзинь Лин";
                 button4.Text = "Цзинь Цзы Сюань";
             }
-            if (clan == "Юн Мэн Цзян")
+            else if (clan == "Юн Мэн Цзян")
             {
-                button1.Text = "Цзян Фэн Мянь и Юй Цзы Юань";
+                button1.Text = "Цзян Фэн Мянь";
                 button2.Text = "Цзян Чэн";
                 button3.Text = "Вей Усянь";
-                button4.Text = "Цзян Яньли";
+                button4.Text = "Цзян Янь Ли";
             }
-            if (clan == "Гу Су Лань")
+            else if(clan == "Гу Су Лань")
             {
                 button1.Text = "Лань Ван Цзы";
                 button2.Text = "Лань Сичень";
                 button3.Text = "Лань Сычжуй и Лань Цзинъи";
                 button4.Text = "Лань Цижэнь";
             }
-            if (clan == "Ци Шань Вэнь")
+            else if(clan == "Ци Шань Вэнь")
             { 
-                button1.Text = "Лань Ван Цзы";
-                button2.Text = "Лань Сичень";
-                button3.Text = "Лань Сычжуй и Лань Цзинъи";
-                button4.Text = "Лань Цижэнь";
+                button1.Text = "Вэнь Жо Хань";
+                button2.Text = "Вэнь Нин";
+                button3.Text = "Вэнь Цин";
+                button4.Text = "Вэнь Чжао";
             }
-           // if (clan == "Цин Хэ Нэ")
-           // {
-           //     
-          //  }
+            else if(clan == "Цин Хэ Нэ")
+            {
+                button1.Text = "Не Хуай Сан";
+                button2.Text = "Не Мин Цзюэ";
+                for (int i = 2; i < 4; i = i + 1)
+                {
+                    bttn[i].Visible = false;
+                    pctbox[i].Visible = false;
+                }
+            }
+            else
+            {
+                for (int i = 0; i < 4; i = i + 1)
+                {
+                    bttn[i].Visible = false;
+                    pctbox[i].Visible = false;
+                }
+            }
 
             drawPicture(button1, pictureBox1);
             drawPicture(button2, pictureBox2);
@@ -83,6 +109,16 @@ namespace WindowsFormsApp2
         {            
             prsn f = new prsn(((Button)sender).Text);
             f.Show();
+        }
+
+        private void Persons1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
