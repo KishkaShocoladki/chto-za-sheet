@@ -54,7 +54,27 @@ namespace WindowsFormsApp2
 
         private void button1_Click(object sender, EventArgs e)
         {
+            System.Diagnostics.Process.Start("https://ru.wikipedia.org/wiki/Заглавная_страница");
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://ru.wikipedia.org/wiki/Заглавная_страница");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://ru.wikipedia.org/wiki/Заглавная_страница");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://ru.wikipedia.org/wiki/Заглавная_страница");
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://ru.wikipedia.org/wiki/Заглавная_страница");
         }
     }
 }

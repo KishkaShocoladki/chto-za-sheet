@@ -60,17 +60,21 @@
             // 
             // textBox1
             // 
+            this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(13, 83);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(186, 332);
             this.textBox1.TabIndex = 4;
             // 
             // textBox2
             // 
+            this.textBox2.Enabled = false;
             this.textBox2.Location = new System.Drawing.Point(205, 83);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(179, 333);
             this.textBox2.TabIndex = 5;
             this.textBox2.TabStop = false;
@@ -80,6 +84,7 @@
             this.textBox3.Location = new System.Drawing.Point(13, 10);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(371, 67);
             this.textBox3.TabIndex = 6;
             // 

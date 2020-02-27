@@ -113,7 +113,7 @@ namespace WindowsFormsApp2
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            prsn f = new prsn(((PictureBox)sender).Text);
+            prsn f = new prsn((PictureBox)sender);
             f.Show();
         }
 

@@ -41,10 +41,6 @@ namespace WindowsFormsApp2
             pctbox[1] = pictureBox2;
             pctbox[2] = pictureBox3;
             pctbox[3] = pictureBox4;
-            //  button1.Text = "";
-            // button2.Text = "";
-            //  button3.Text = "";
-            //  button4.Text = "";
 
             if (clan == "Лань Линь Цзинь")
             {
@@ -99,29 +95,14 @@ namespace WindowsFormsApp2
             drawPicture(button4, pictureBox4);
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            prsn f = new prsn("kkk");
-            f.Show();
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {            
-            prsn f = new prsn(((Button)sender).Text);
+            prsn f = new prsn((Button)sender);
             f.Show();
         }
 
         private void Persons1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
         {
 
         }
