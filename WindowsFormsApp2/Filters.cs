@@ -30,9 +30,13 @@ namespace WindowsFormsApp2
     public partial class Filters : Form
     {
         Per[] persons = new Per[10];
+        public static List<Per> team = new List<Per>();
+
+
+        
         public Filters()
         {
-            InitializeComponent();
+            InitializeComponent(); 
 
             persons[0] = new Per("Цзинь Гуанъяо", "Мертв", 2);
             persons[1] = new Per("Цзинь Гуань Шань", "Мертв", 20);
@@ -47,8 +51,9 @@ namespace WindowsFormsApp2
 
             int x = 10;
             int y = 200;
-            for (int i = 0; i < 10; i = i + 1)
+            for (int i = 0; i < persons.Length; i = i + 1)
             {
+
                 persons[i].pix.Location = new Point(x, y);
                 persons[i].pix.Size = new Size(100, 100);
                 persons[i].pix.Text = persons[i].name;
@@ -57,11 +62,10 @@ namespace WindowsFormsApp2
                 persons[i].pix.Load("../../Pictures/Persons/" + persons[i].name + ".jpg");
                 Controls.Add(persons[i].pix);
                 x = x + 100;
-                if (x > Width)
+                if (x + 100 > Width)
                 {
                     x = 10;
                     y = y + 150;
-
                 }
             }
         }
@@ -75,7 +79,7 @@ namespace WindowsFormsApp2
         {
             int x = 10;
             int y = 200;
-            for (int i = 0; i < 10; i = i + 1)
+            for (int i = 0; i < persons.Length; i = i + 1)
             {
                 persons[i].pix.Visible = false;
                 bool show = true;
@@ -103,7 +107,7 @@ namespace WindowsFormsApp2
                     persons[i].pix.Visible = true;
                     persons[i].pix.Location = new Point(x, y);
                     x = x + 100;
-                    if (x > Width)
+                    if (x + 100 > Width)
                     {
                         x = 10;
                         y = y + 150;
@@ -113,8 +117,17 @@ namespace WindowsFormsApp2
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            prsn f = new prsn((PictureBox)sender);
-            f.Show();
+           for (int i = 0; i < persons.Length; i = i + 1)
+            {
+                if (sender == persons[i].pix)
+                {
+                    prsn f = new prsn(persons[i]);
+                    f.Show();
+
+                }
+            }
+            // prsn f = new prsn((PictureBox)sender);
+           // f.Show();
         }
 
 

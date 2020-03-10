@@ -12,24 +12,33 @@ namespace WindowsFormsApp2
 {
     public partial class prsn : Form
     {
-        public prsn(PictureBox person)
+        Per person;
+
+        private void button1_Click(object sender, EventArgs e)
         {
+            Filters.team.Add(person);
+        }
+
+        public prsn(Per person1)
+        {
+            person = person1;
             InitializeComponent();
-            Text = "Информация о " + person.Text;
+            Text = "Информация о " + person.name;
 
             try
             {
-                pictureBox1.Load("../../Pictures/Persons/" + person.Text + ".jpg");
-                pictureBox2.Load("../../Pictures/Persons/" + person.Text + "2" + ".jpg");
+                pictureBox1.Load("../../Pictures/Persons/" + person.name + ".jpg");
+                pictureBox2.Load("../../Pictures/Persons/" + person.name + "2" + ".jpg");
                 textBox1.Lines =
-                  System.IO.File.ReadAllLines("../../Pictures/" + person.Text + "Б1" + ".txt");
+                  System.IO.File.ReadAllLines("../../Pictures/" + person.name + "Б1" + ".txt");
                 textBox2.Lines =
-                  System.IO.File.ReadAllLines("../../Pictures/" + person.Text + "Б2" + ".txt");
+                  System.IO.File.ReadAllLines("../../Pictures/" + person.name + "Б2" + ".txt");
                 textBox3.Lines =
-                  System.IO.File.ReadAllLines("../../Pictures/" + person.Text + ".txt");
+                  System.IO.File.ReadAllLines("../../Pictures/" + person.name + ".txt");
             }
             catch (Exception) { }
         }
+
         public prsn(Button person)
         {
             InitializeComponent();

@@ -30,3 +30,4 @@ C:\Users\user\source\repos\chto-za-sheet\WindowsFormsApp2\obj\Debug\WindowsForms
 C:\Users\user\source\repos\chto-za-sheet\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
 C:\Users\user\source\repos\chto-za-sheet\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\user\source\repos\chto-za-sheet\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\user\Source\Repos\chto-za-sheet\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.team.resources

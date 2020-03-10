@@ -41,5 +41,11 @@ namespace WindowsFormsApp2
             form8.Show();
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            team t = new team();
+            t.Show();
+        }
     }
 }
