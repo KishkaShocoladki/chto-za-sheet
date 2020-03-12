@@ -27,9 +27,10 @@ namespace WindowsFormsApp2
             pix = new PictureBox();
         }
     }
+
     public partial class Filters : Form
     {
-        Per[] persons = new Per[10];
+        public static Per[] persons = new Per[10];
         public static List<Per> team = new List<Per>();
 
 
@@ -115,15 +116,15 @@ namespace WindowsFormsApp2
                 }
             }
         }
-        private void button2_Click(object sender, EventArgs e)
+        
+        public static void button2_Click(object sender, EventArgs e)
         {
            for (int i = 0; i < persons.Length; i = i + 1)
             {
-                if (sender == persons[i].pix)
+                if (((PictureBox)sender).Image == persons[i].pix.Image)
                 {
                     prsn f = new prsn(persons[i]);
                     f.Show();
-
                 }
             }
             // prsn f = new prsn((PictureBox)sender);
