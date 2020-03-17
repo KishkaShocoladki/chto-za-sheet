@@ -47,7 +47,7 @@ namespace WindowsFormsApp2
             bttn[2] = button3;
             bttn[3] = button4;
 
-            PictureBox[] pctbox = new PictureBox[4];
+            PictureBox[] pctbox = new PictureBox[5];
             pctbox[0] = pictureBox1;
             pctbox[1] = pictureBox2;
             pctbox[2] = pictureBox3;
@@ -58,7 +58,7 @@ namespace WindowsFormsApp2
             
             if (clan == "Лань Линь Цзинь")
             {
-                //pctbox[0].Load("../../Pictures/Persons/" + clan + ".jpg");
+                pctbox[0].Load("../../Pictures/Clans/" + clan + ".jpg");
                 button1.Text = "Цзинь Гуанъяо";
                 button2.Text = "Цзинь Гуань Шань";
                 button3.Text = "Цзинь Лин";
@@ -108,7 +108,7 @@ namespace WindowsFormsApp2
                 }
             }
 
-            drawPicture(button1, pictureBox1);
+            drawPicture(button1, pictureBox5);
             drawPicture(button2, pictureBox2);
             drawPicture(button3, pictureBox3);
             drawPicture(button4, pictureBox4);
