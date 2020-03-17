@@ -175,6 +175,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Name = "Clans";
             this.Text = "КЛАНЫ";
+            this.Load += new System.EventHandler(this.Clans_Load);
             ((System.ComponentModel.ISupportInitialize)(this.clan1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clan3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clan2)).EndInit();

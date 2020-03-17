@@ -44,7 +44,7 @@ namespace WindowsFormsApp2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Team f = new Team();
+            TEAM f = new TEAM();
             f.Show();
         }
     }

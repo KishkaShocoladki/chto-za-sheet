@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp2
 {
-    partial class Team
+    partial class TEAM
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,15 @@
         {
             this.SuspendLayout();
             // 
-            // Team
+            // TEAM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(322, 340);
-            this.Name = "Team";
+            this.Name = "TEAM";
             this.Text = "TEAM";
+            this.Load += new System.EventHandler(this.TEAM_Load);
             this.ResumeLayout(false);
 
         }

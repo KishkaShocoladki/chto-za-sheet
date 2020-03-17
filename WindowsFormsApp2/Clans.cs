@@ -23,5 +23,10 @@ namespace WindowsFormsApp2
             clan f = new clan(btn.Text);
             f.Show();
         }
+
+        private void Clans_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

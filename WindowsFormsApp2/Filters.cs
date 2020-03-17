@@ -30,7 +30,7 @@ namespace WindowsFormsApp2
 
     public partial class Filters : Form
     {
-        public static Per[] persons = new Per[10];
+        public static Per[] persons = new Per[18];
         public static List<Per> team = new List<Per>();
 
 
@@ -39,22 +39,29 @@ namespace WindowsFormsApp2
         {
             InitializeComponent(); 
 
-            persons[0] = new Per("Цзинь Гуанъяо", "Мертв", 2);
-            persons[1] = new Per("Цзинь Гуань Шань", "Мертв", 20);
-            persons[2] = new Per("Цзян Фэн Мянь", "Мертв", 14);
-            persons[3] = new Per("Цзян Чэн", "Жив", 35);
-            persons[4] = new Per("Вей Усянь", "Мертв", 27);
-            persons[5] = new Per("Лань Ван Цзы", "Жив", 35);
-            persons[6] = new Per("Вэнь Жо Хань", "Мертв", 20);
-            persons[7] = new Per("Не Хуай Сан", "Жив", 17);
-            persons[8] = new Per("Не Мин Цзюэ", "Мертв", 16);
-            persons[9] = new Per("Лань Сичень", "Жив", 15);
+            persons[0] = new Per("Цзинь Гуанъяо", "Мертв", 500);
+            persons[1] = new Per("Цзинь Гуань Шань", "Мертв", 500);
+            persons[2] = new Per("Цзинь Лин", "Жив", 15);
+            persons[3] = new Per("Цзинь Цзы Сюань", "Мертв", 500);
+            persons[4] = new Per("Цзян Фэн Мянь", "Мертв", 500);
+            persons[5] = new Per("Цзян Чэн", "Жив", 34);
+            persons[6] = new Per("Вей Усянь", "Мертв", 35);
+            persons[7] = new Per("Цзян Янь Ли", "Мертв", 500);
+            persons[8] = new Per("Лань Ван Цзы", "Жив", 35);
+            persons[9] = new Per("Лань Сичень", "Жив", 38);
+            persons[10] = new Per("Лань Сычжуй и Лань Цзинъи", "Жив", 15-16);
+            persons[11] = new Per("Лань Цижэнь", "Мертв", 500 );
+            persons[12] = new Per("Вэнь Жо Хань", "Мертв", 500);
+            persons[13] = new Per("Вэнь Нин", "Мертв", 34);
+            persons[14] = new Per("Вэнь Цин", "Мертв", 500);
+            persons[15] = new Per("Вэнь Чжао", "Мертв", 500);
+            persons[16] = new Per("Не Хуай Сан", "Жив", 34);
+            persons[17] = new Per("Не Мин Цзюэ", "Мертв", 500);
 
             int x = 10;
             int y = 200;
             for (int i = 0; i < persons.Length; i = i + 1)
             {
-
                 persons[i].pix.Location = new Point(x, y);
                 persons[i].pix.Size = new Size(100, 100);
                 persons[i].pix.Text = persons[i].name;
@@ -62,6 +69,13 @@ namespace WindowsFormsApp2
                 persons[i].pix.Click += new EventHandler(button2_Click);
                 persons[i].pix.Load("../../Pictures/Persons/" + persons[i].name + ".jpg");
                 Controls.Add(persons[i].pix);
+
+
+                persons[i].b.Location = new Point(x, y + 100);
+                persons[i].b.Size = new Size(100, 30);
+                persons[i].b.Text = persons[i].name;
+                Controls.Add(persons[i].b);
+
                 x = x + 100;
                 if (x + 100 > Width)
                 {
@@ -82,6 +96,7 @@ namespace WindowsFormsApp2
             int y = 200;
             for (int i = 0; i < persons.Length; i = i + 1)
             {
+                persons[i].b.Visible = false;
                 persons[i].pix.Visible = false;
                 bool show = true;
 

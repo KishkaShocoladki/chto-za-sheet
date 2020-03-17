@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    public partial class Team : Form
+    public partial class TEAM : Form
     {
-        public Team()
+        public TEAM()
         {
             InitializeComponent();
             int x = 10;
@@ -20,6 +20,8 @@ namespace WindowsFormsApp2
             foreach (Per per in Filters.team)
             {
                 PictureBox pix = new PictureBox();
+                Button but = new Button();
+
                 pix.Text = per.pix.Text;
                 pix.Size = per.pix.Size;
                 pix.SizeMode = per.pix.SizeMode;
@@ -28,12 +30,16 @@ namespace WindowsFormsApp2
                 //pix.Location = per.pix.Location;
                 pix.Image = per.pix.Image;
 
+                but.Location = per.b.Location;
+                but.Size = per.b.Size;
+                but.Text = per.b.Text;
+
                 Controls.Add(pix);
                 x = x + 100;
                 if (x + 100 > Width)
                 {
                     x = 10;
-                    y = y + 150;
+                    y = y + 110;
                 }
             }
         }
@@ -42,6 +48,11 @@ namespace WindowsFormsApp2
         
         
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TEAM_Load(object sender, EventArgs e)
         {
 
         }
