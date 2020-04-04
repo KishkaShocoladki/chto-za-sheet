@@ -31,14 +31,14 @@ namespace WindowsFormsApp2
 
             try
             {
-               // pictureBox1.Load("../../Pictures/Persons/" + clan + ".jpg");
-               //pictureBox2.Load("../../Pictures/Persons/" + clan + "2" + ".jpg");
+                // pictureBox1.Load("../../Pictures/Persons/" + clan + ".jpg");
+                //pictureBox2.Load("../../Pictures/Persons/" + clan + "2" + ".jpg");
                 textBox1.Lines =
                   System.IO.File.ReadAllLines("../../Pictures/" + clan + "Б1" + ".txt");
                 //textBox2.Lines =
-                  //System.IO.File.ReadAllLines("../../Pictures/" + clan + "Б2" + ".txt");
+                //System.IO.File.ReadAllLines("../../Pictures/" + clan + "Б2" + ".txt");
                 //textBox3.Lines =
-                  //System.IO.File.ReadAllLines("../../Pictures/" + clan + ".txt");
+                //System.IO.File.ReadAllLines("../../Pictures/" + clan + ".txt");
             }
             catch (Exception) { }
             Button[] bttn = new Button[4];
@@ -54,8 +54,8 @@ namespace WindowsFormsApp2
             pctbox[3] = pictureBox4;
             pctbox[4] = pictureBox5;
 
-            
-            
+
+
             if (clan == "Лань Линь Цзинь")
             {
                 pctbox[0].Load("../../Pictures/Clans/" + clan + ".jpg");
@@ -66,7 +66,7 @@ namespace WindowsFormsApp2
             }
             else if (clan == "Юн Мэн Цзян")
             {
-               
+
                 button1.Text = "Цзян Фэн Мянь";
                 button2.Text = "Цзян Чэн";
                 button3.Text = "Вей Усянь";
@@ -74,7 +74,7 @@ namespace WindowsFormsApp2
             }
             else if (clan == "Гу Су Лань")
             {
-              
+
                 button1.Text = "Лань Ван Цзы";
                 button2.Text = "Лань Сичень";
                 button3.Text = "Лань Сычжуй и Лань Цзинъи";
@@ -82,7 +82,7 @@ namespace WindowsFormsApp2
             }
             else if (clan == "Ци Шань Вэнь")
             {
-              
+
                 button1.Text = "Вэнь Жо Хань";
                 button2.Text = "Вэнь Нин";
                 button3.Text = "Вэнь Цин";
@@ -90,7 +90,7 @@ namespace WindowsFormsApp2
             }
             else if (clan == "Цин Хэ Нэ")
             {
-               
+
                 button1.Text = "Не Хуай Сан";
                 button2.Text = "Не Мин Цзюэ";
                 for (int i = 2; i < 4; i = i + 1)
@@ -123,5 +123,11 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+               
+        }
     }
 }
+

@@ -20,7 +20,8 @@ namespace WindowsFormsApp2
             foreach (Per per in Filters.team)
             {
                 PictureBox pix = new PictureBox();
-                Button but = new Button();
+                Label but = new Label();
+
 
                 pix.Text = per.pix.Text;
                 pix.Size = per.pix.Size;
@@ -30,16 +31,18 @@ namespace WindowsFormsApp2
                 //pix.Location = per.pix.Location;
                 pix.Image = per.pix.Image;
 
-                but.Location = per.b.Location;
+                but.Location = new Point(x, y + 100);
                 but.Size = per.b.Size;
                 but.Text = per.b.Text;
 
                 Controls.Add(pix);
+                Controls.Add(but);
+
                 x = x + 100;
                 if (x + 100 > Width)
                 {
                     x = 10;
-                    y = y + 110;
+                    y = y + 150;
                 }
             }
         }

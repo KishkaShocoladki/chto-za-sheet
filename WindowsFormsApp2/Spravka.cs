@@ -26,5 +26,10 @@ namespace WindowsFormsApp2
         {
             textBox1.Text = "Rkfys - юююю";
         }
+
+        private void Spravka_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

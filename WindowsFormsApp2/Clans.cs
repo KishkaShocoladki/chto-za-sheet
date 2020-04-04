@@ -19,12 +19,17 @@ namespace WindowsFormsApp2
 
         private void button1_Click(object sender, EventArgs e)
         {            
-            Button btn = (Button)sender;
+            PictureBox btn = (PictureBox)sender;
             clan f = new clan(btn.Text);
             f.Show();
         }
 
         private void Clans_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }

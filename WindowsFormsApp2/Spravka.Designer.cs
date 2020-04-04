@@ -43,8 +43,8 @@
             this.справкаToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(711, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(533, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -54,43 +54,46 @@
             this.персонажиToolStripMenuItem,
             this.кланыToolStripMenuItem});
             this.справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
-            this.справкаToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
+            this.справкаToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.справкаToolStripMenuItem.Text = "Справка";
             // 
             // персонажиToolStripMenuItem
             // 
             this.персонажиToolStripMenuItem.Name = "персонажиToolStripMenuItem";
-            this.персонажиToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.персонажиToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.персонажиToolStripMenuItem.Text = "Персонажи";
             this.персонажиToolStripMenuItem.Click += new System.EventHandler(this.персонажиToolStripMenuItem_Click);
             // 
             // кланыToolStripMenuItem
             // 
             this.кланыToolStripMenuItem.Name = "кланыToolStripMenuItem";
-            this.кланыToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
+            this.кланыToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.кланыToolStripMenuItem.Text = "Кланы";
             this.кланыToolStripMenuItem.Click += new System.EventHandler(this.кланыToolStripMenuItem_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(172, 30);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox1.Location = new System.Drawing.Point(129, 11);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(500, 302);
+            this.textBox1.Size = new System.Drawing.Size(376, 259);
             this.textBox1.TabIndex = 1;
+            this.textBox1.Text = "Справки нет, но вы держитесь";
             // 
             // Spravka
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(711, 360);
+            this.ClientSize = new System.Drawing.Size(533, 292);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Spravka";
             this.Text = "Spravka";
+            this.Load += new System.EventHandler(this.Spravka_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

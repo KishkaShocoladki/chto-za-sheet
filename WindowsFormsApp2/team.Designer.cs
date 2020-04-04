@@ -32,10 +32,11 @@
             // 
             // TEAM
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(322, 340);
+            this.ClientSize = new System.Drawing.Size(439, 276);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "TEAM";
             this.Text = "TEAM";
             this.Load += new System.EventHandler(this.TEAM_Load);

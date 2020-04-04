@@ -16,7 +16,9 @@ namespace WindowsFormsApp2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Filters.team.Add(person);
+            if (!Filters.team.Contains(person))
+                Filters.team.Add(person);
+            //Filters.team.Add(person);
         }
 
         public prsn(Per person1)
@@ -39,7 +41,7 @@ namespace WindowsFormsApp2
             catch (Exception) { }
         }
 
-        public prsn(Button person)
+       /* public prsn(Button person)
         {
             InitializeComponent();
             Text = "Информация о " + person.Text;
@@ -72,9 +74,14 @@ namespace WindowsFormsApp2
                   System.IO.File.ReadAllLines("../../Pictures/" + person.Text + ".txt");
             }
             catch (Exception) { }
-        }
+        }*/
 
         private void prsn_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
