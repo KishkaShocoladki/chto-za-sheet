@@ -19,7 +19,7 @@ namespace WindowsFormsApp2
 
         private void button1_Click(object sender, EventArgs e)
         {            
-            PictureBox btn = (PictureBox)sender;
+            Button btn = (Button)sender;
             clan f = new clan(btn.Text);
             f.Show();
         }

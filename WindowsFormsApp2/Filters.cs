@@ -10,21 +10,25 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    public struct Per
+   public struct Per
     {
         public string name;
         public string sost;
         public int age;
         public Label b;
         public PictureBox pix;
+        public string clan;
+        public string secondname;
 
-        public Per(string name1, string sost1, int age1)
+        public Per(string name1, string sost1, int age1, string clan1, string secondname1)
         {
             name = name1;
             age = age1;
             sost = sost1;
             b = new Label();
             pix = new PictureBox();
+            clan = clan1;
+            secondname = secondname1;
         }
     }
 
@@ -39,7 +43,7 @@ namespace WindowsFormsApp2
             foreach (string str in lines)
             {
                 string[] parts = str.Split(new string[] { ", " }, StringSplitOptions.None);
-                persons.Add(new Per(parts[0], parts[1], Convert.ToInt32(parts[2])));
+                persons.Add(new Per(parts[0], parts[1], Convert.ToInt32(parts[2]), parts[3], parts[4]));
             }
             /*
                         persons[0] = new Per("Цзинь Гуанъяо", "Мертв", 500);
@@ -70,7 +74,11 @@ namespace WindowsFormsApp2
                 persons[i].pix.Text = persons[i].name;
                 persons[i].pix.SizeMode = PictureBoxSizeMode.Zoom;
                 persons[i].pix.Click += new EventHandler(button2_Click);
-                persons[i].pix.Load("../../Pictures/Persons/" + persons[i].name + ".jpg");
+                try
+                {
+                    persons[i].pix.Load("../../Pictures/Persons/" + persons[i].name + ".jpg");
+                }
+                catch (Exception) { }
 
                 persons[i].b.Location = new Point(x, y + 100);
                 persons[i].b.Size = new Size(100, 30);
@@ -88,6 +96,11 @@ namespace WindowsFormsApp2
         public Filters()
         {
             InitializeComponent();
+            foreach (Per per in persons)
+            {
+                Controls.Add(per.b);
+                Controls.Add(per.pix);
+            }
 
         }
 
@@ -170,7 +183,7 @@ namespace WindowsFormsApp2
 
 
 
-   /* public struct Per
+  /* public struct Per
     {
         public string name;
         public string sost;

@@ -90,6 +90,12 @@
     <Compile Include="prsn.Designer.cs">
       <DependentUpon>prsn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Savevfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Savevfile.Designer.cs">
+      <DependentUpon>Savevfile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Spravka.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,9 @@
     </Compile>
     <EmbeddedResource Include="prsn.resx">
       <DependentUpon>prsn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Savevfile.resx">
+      <DependentUpon>Savevfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Spravka.resx">
       <DependentUpon>Spravka.cs</DependentUpon>
