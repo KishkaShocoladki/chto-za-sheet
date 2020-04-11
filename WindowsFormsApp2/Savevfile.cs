@@ -19,17 +19,25 @@ namespace WindowsFormsApp2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            System.IO.File.AppendAllText("Персонажи.txt", Environment.NewLine + comboBox1.Text + ", " + comboBox2.Text + ", " + comboBox4.Text + ", " + comboBox5.Text);
+            System.IO.File.AppendAllText("Персонажи.txt", 
+                Environment.NewLine + textBox1.Text + ", " + comboBox2.Text + ", " + textBox2.Text + ", " + comboBox4.Text + ", " + comboBox5.Text);
+
+            System.IO.File.Copy(FileName, "../../Pictures/Persons/" + textBox1.Text + ".jpg");
+
+            System.IO.File.WriteAllText("../../Pictures/" + textBox1.Text + "Б1" + ".txt", textBox3.Text);
+            System.IO.File.WriteAllText("../../Pictures/" + textBox1.Text + "Б2" + ".txt", textBox4.Text);
+            System.IO.File.WriteAllText("../../Pictures/" + textBox1.Text + ".txt", textBox5.Text);
         }
 
-        private void label1_Click(object sender, EventArgs e)
+       String FileName;
+
+        private void button2_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                FileName = openFileDialog1.FileName;
+                pictureBox1.Load(FileName);
+            }
         }
     }
 }

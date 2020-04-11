@@ -39,7 +39,7 @@ namespace WindowsFormsApp2
 
         public static void fillperss()
         {
-            string[] lines = System.IO.File.ReadAllLines("Персонажи.txt");
+           string[] lines = System.IO.File.ReadAllLines("Персонажи.txt");
             foreach (string str in lines)
             {
                 string[] parts = str.Split(new string[] { ", " }, StringSplitOptions.None);

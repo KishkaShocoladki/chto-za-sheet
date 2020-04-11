@@ -98,6 +98,7 @@
             this.textBox3.Size = new System.Drawing.Size(279, 55);
             this.textBox3.TabIndex = 6;
             this.textBox3.Text = "Информации нет, но вы держитесь";
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // button1
             // 
