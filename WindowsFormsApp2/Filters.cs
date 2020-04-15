@@ -177,6 +177,42 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
+       
+        int startTime = 0;
+       
+        private void неСмотриСюдаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            startTime = Environment.TickCount;
+            // label5.Visible = true;
+        }
+
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+            if (Environment.TickCount - startTime < 5000)
+            {
+                persons[5].pix.ForeColor = Color.Blue;
+                persons[6].pix.ForeColor = Color.Blue;
+                persons[8].pix.ForeColor = Color.Blue;
+                persons[13].pix.ForeColor = Color.Blue;
+                persons[16].pix.ForeColor = Color.Blue;
+                label5.Visible = true;
+            }
+            else 
+            {
+                persons[5].pix.ForeColor = Color.White;
+                persons[6].pix.ForeColor = Color.White;
+                persons[8].pix.ForeColor = Color.White;
+                persons[13].pix.ForeColor = Color.White;
+                persons[16].pix.ForeColor = Color.White;
+                label5.Visible = false;
+            }
+                
+        }
     }
 }
 
