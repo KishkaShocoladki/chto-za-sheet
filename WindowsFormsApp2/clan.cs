@@ -148,6 +148,40 @@ namespace WindowsFormsApp2
         public clan(string clan)
         {
             InitializeComponent();
+            /* int x = 10;
+             int y = 10;
+             foreach (Per per in Filters.persons)
+             {
+                 if (per.clan == clan)
+                 {
+                     PictureBox pix = new PictureBox();
+                     Label but = new Label();
+
+
+                     pix.Text = per.pix.Text;
+                     pix.Size = new Size(100, 100);
+                     pix.SizeMode = per.pix.SizeMode;
+                     pix.Location = new Point(x, y);
+                     pix.Click += new EventHandler(Filters.button2_Click);
+                     pix.Image = per.pix.Image;
+
+                     but.Location = new Point(x, y + 100);
+                     but.Size = new Size(100, 15);
+                     but.Text = per.b.Text;
+                     but.TextAlign = ContentAlignment.MiddleCenter;
+                     but.Font = new Font("Arial", 8);
+
+                     Controls.Add(pix);
+                     Controls.Add(but);
+
+                     x = x + 10;
+                     if (x + 10 > Width)
+                     {
+                         x = 10;
+                         y = y + 150;
+                     }
+                 }
+             }*/
             Text = "Информация о клане " + clan;
 
             try
@@ -162,6 +196,7 @@ namespace WindowsFormsApp2
                 //System.IO.File.ReadAllLines("../../Pictures/" + clan + ".txt");
             }
             catch (Exception) { }
+
             Button[] bttn = new Button[4];
             bttn[0] = button1;
             bttn[1] = button2;

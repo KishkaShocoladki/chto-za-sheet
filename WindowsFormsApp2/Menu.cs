@@ -40,7 +40,6 @@ namespace WindowsFormsApp2
         {
             Filters form8 = new Filters();
             form8.Show();
-
         }
 
         private void button2_Click(object sender, EventArgs e)
