@@ -39,7 +39,8 @@ namespace WindowsFormsApp2
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Filters form8 = new Filters();
-            form8.Show();
+           // form8.Show();
+            form8.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -57,6 +58,11 @@ namespace WindowsFormsApp2
         {
             Savevfile f = new Savevfile();
             f.Show();
+        }
+
+        private void Menu_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

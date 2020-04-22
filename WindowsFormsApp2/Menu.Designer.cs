@@ -132,6 +132,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Menu";
             this.Text = "МАГИСТР ДЬЯВОЛЬСКОГО КУЛЬТА";
+            this.Load += new System.EventHandler(this.Menu_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
