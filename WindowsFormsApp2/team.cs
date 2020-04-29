@@ -47,17 +47,10 @@ namespace WindowsFormsApp2
             }
         }
 
-        
-        
-        
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void TEAM_Load(object sender, EventArgs e)
-        {
-
+            Email f = new Email();
+            f.Show();
         }
     }
 }

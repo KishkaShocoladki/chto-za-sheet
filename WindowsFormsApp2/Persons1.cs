@@ -148,5 +148,10 @@ namespace WindowsFormsApp2
             }*/
 
         }
+
+        private void Persons1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

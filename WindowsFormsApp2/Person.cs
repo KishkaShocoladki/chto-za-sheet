@@ -76,5 +76,10 @@ namespace WindowsFormsApp2
         {
             System.Diagnostics.Process.Start("https://ru.wikipedia.org/wiki/Заглавная_страница");
         }
+
+        private void Person_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

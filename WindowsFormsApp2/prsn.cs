@@ -39,6 +39,7 @@ namespace WindowsFormsApp2
                   System.IO.File.ReadAllLines("../../Pictures/" + person.name + ".txt");
             }
             catch (Exception) { }
+            
         }
 
        /* public prsn(Button person)
@@ -82,11 +83,6 @@ namespace WindowsFormsApp2
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
         {
 
         }

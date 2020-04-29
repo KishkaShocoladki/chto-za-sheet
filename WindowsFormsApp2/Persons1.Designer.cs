@@ -39,6 +39,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Persons1";
             this.Text = "ПЕРСОНАЖИ";
+            this.Load += new System.EventHandler(this.Persons1_Load);
             this.ResumeLayout(false);
 
         }

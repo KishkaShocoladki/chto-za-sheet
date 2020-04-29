@@ -39,5 +39,15 @@ namespace WindowsFormsApp2
                 pictureBox1.Load(FileName);
             }
         }
+
+        private void Savevfile_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -20,12 +20,14 @@ namespace WindowsFormsApp2
 
         private void персонажиToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "Персонажи - юююю";
+            textBox1.Lines =
+                    System.IO.File.ReadAllLines("../../Pictures/" + "Персонажи" + ".txt");
         }
 
         private void кланыToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "Rkfys - юююю";
+            textBox1.Lines =
+                  System.IO.File.ReadAllLines("../../Pictures/" + "Кланы" + ".txt");
         }
 
         private void Spravka_Load(object sender, EventArgs e)

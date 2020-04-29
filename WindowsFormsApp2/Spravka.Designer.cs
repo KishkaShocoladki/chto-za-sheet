@@ -61,14 +61,14 @@
             // персонажиToolStripMenuItem
             // 
             this.персонажиToolStripMenuItem.Name = "персонажиToolStripMenuItem";
-            this.персонажиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.персонажиToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.персонажиToolStripMenuItem.Text = "Персонажи";
             this.персонажиToolStripMenuItem.Click += new System.EventHandler(this.персонажиToolStripMenuItem_Click);
             // 
             // кланыToolStripMenuItem
             // 
             this.кланыToolStripMenuItem.Name = "кланыToolStripMenuItem";
-            this.кланыToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.кланыToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.кланыToolStripMenuItem.Text = "Кланы";
             this.кланыToolStripMenuItem.Click += new System.EventHandler(this.кланыToolStripMenuItem_Click);
             // 
@@ -79,7 +79,9 @@
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(425, 178);
+            this.textBox1.ReadOnly = true;
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox1.Size = new System.Drawing.Size(425, 270);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "Справки нет, но вы держитесь";
             // 
@@ -87,7 +89,7 @@
             // 
             this.button1.Location = new System.Drawing.Point(9, 27);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(83, 111);
+            this.button1.Size = new System.Drawing.Size(83, 253);
             this.button1.TabIndex = 2;
             this.button1.Text = "Скачать новеллу(нет)";
             this.button1.UseVisualStyleBackColor = true;
