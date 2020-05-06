@@ -42,5 +42,11 @@ namespace WindowsFormsApp2
                 "C:\\Users\\" + Environment.UserName + "\\Downloads\\MDK.zip");
             MessageBox.Show("Сохранено в MDK.zip");
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            obSvyaz f = new obSvyaz();
+            f.Show();
+        }
     }
 }
