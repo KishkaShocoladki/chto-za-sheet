@@ -64,5 +64,10 @@ namespace WindowsFormsApp2
                 MessageBox.Show("Поздравляю, " + textBox1.Text + " вы выиграли ничего");
             }
         }
+
+        private void Email_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

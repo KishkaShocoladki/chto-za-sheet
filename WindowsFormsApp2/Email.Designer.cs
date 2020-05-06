@@ -111,6 +111,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Email";
             this.Text = "SURPRISE";
+            this.Load += new System.EventHandler(this.Email_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
